@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- این فایل یک صفحه‌ی وب ساده است. هیچ برنامه یا کتابخانه‌ی اضافه‌ای لازم ندارد. -->
+
+<html lang="fa" dir="rtl">
+<!-- lang="fa" یعنی زبان صفحه فارسی است، dir="rtl" یعنی چیدمان از راست به چپ -->
+
+<head>
+  <meta charset="utf-8">
+  <!-- charset یعنی حروف فارسی درست نمایش داده شوند -->
+
+  <title>پروژه داده — دمای هوا در چهار ماه</title>
+
+  <style>
+    /* ---------- این قسمت «ظاهر» صفحه را مشخص می‌کند (CSS) ---------- */
+
+    body {
+      font-family: Tahoma, sans-serif;   /* فونت ساده و همه‌جا موجود */
+      background: white;
+      color: #111;
+      margin: 30px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    .sub {
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* ---------- جدول ---------- */
+    table {
+      border-collapse: collapse;   /* خط‌های جدول به هم بچسبند */
+      width: 100%;
+      max-width: 650px;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 2px solid #111;      /* خط دور خانه‌های جدول */
+      padding: 10px;
+      text-align: right;
+    }
+
+    th {
+      background: #f0f0f0;         /* سرتیتر کمی خاکستری */
+      font-weight: bold;
+    }
+
+    td.num {
+      text-align: center;          /* عددها وسط‌چین */
+      width: 100px;
+    }
+
+    /* ---------- نمودار میله‌ای ---------- */
+    .track {
+      background: #eaeaea;         /* زمینه‌ی کم‌رنگ نوار */
+      border: 1px solid #bbb;
+      height: 16px;
+    }
+
+    .bar {
+      background: #333;            /* خودِ نوار */
+      height: 100%;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #444;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>پروژه داده: دمای هوا در چهار ماه</h1>
+  <p class="sub">نام و نام خانوادگی: ............... &nbsp;|&nbsp; کلاس: ...............</p>
+
+  <table>
+    <tr>
+      <th>ماه</th>
+      <th>میانگین دما (سانتی‌گراد)</th>
+      <th>بارندگی (میلی‌متر)</th>
+      <th>نمودار دما</th>
+    </tr>
+
+    <tr>
+      <td>فروردین</td>
+      <td class="num">۱۸</td>
+      <td class="num">۳۰</td>
+      <td>
+        <!-- عرض نوار = دما × ۲/۵  -->
+        <div class="track"><div class="bar" style="width: 45%"></div></div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>اردیبهشت</td>
+      <td class="num">۲۴</td>
+      <td class="num">۱۰</td>
+      <td>
+        <div class="track"><div class="bar" style="width: 60%"></div></div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>خرداد</td>
+      <td class="num">۳۰</td>
+      <td class="num">۳</td>
+      <td>
+        <div class="track"><div class="bar" style="width: 75%"></div></div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>تیر</td>
+      <td class="num">۳۴</td>
+      <td class="num">۲</td>
+      <td>
+        <div class="track"><div class="bar" style="width: 85%"></div></div>
+      </td>
+    </tr>
+  </table>
+
+  <p class="note">
+    داده‌های این جدول نمونه است؛ جای اعداد، داده‌های واقعی شهر خودت را بگذار.
+    &nbsp;|&nbsp; منبع: ...............
+  </p>
+
+</body>
+</html>
